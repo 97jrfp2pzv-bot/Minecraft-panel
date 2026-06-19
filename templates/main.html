@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <link rel="stylesheet" href="{% static 'stylee.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft-panel</title>
+</head>
+<body>
+    <div class="panel">  
+            <h1>панель</h1>
+            <form action="/killAll/" method="post">
+                {% csrf_token %}
+              <button type="submit" class="killButton">
+                    убить игроков
+              </button>
+            </form>
+             <form action="/restart/" method="post">
+                {% csrf_token %}
+              <button type="submit" class="restartButton">
+                   перезагрузка
+              </button>
+            </form>
+             <form action="/gamemode/" method="post">
+                {% csrf_token %}
+              <button type="submit" class="gamemodeButton">
+                   креатив
+              </button>
+            </form>
+            <form action="/addsrv/" method="post">
+                {% csrf_token %}
+              <button type="submit" class="addsrv">
+                   Добавить сервер 
+              </button>
+            </form>
+            <form class= "console" action="/console/" method="POST">
+                {% csrf_token %}
+            <input type="text" id="console" placeholder="введите команду" name="command">
+            <button type="submit">
+                отправить
+            </button>
+    </form>
+    </div>
+</body>
+</html>

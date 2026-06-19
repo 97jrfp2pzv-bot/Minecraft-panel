@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'styler.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft-panel</title>
+</head>
+<body>
+<form class= "srv" action="/addsrv/" method="POST">
+    <h1>Добавить Сервер</h1>
+        {% csrf_token %}
+    <input type="text" id="ip" placeholder="ip-addres-rcon" name="ip">
+    <input type="password" id="password" placeholder="rcon-password" name="password">
+    <input type="text" id="port" placeholder="port-rcon" name="port">
+    <button type="submit">
+        Готово
+    </button>
+
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+    opacity: 80%;
+    background: radial-gradient(50% 50%, yellow, rgb(0, 0, 0));
+    
+}
+.log input {
+    width: 190px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    opacity: 70%;
+}
+.log button {
+    width: 190px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: yellow;
+    transition: background-color 1s ease-in-out;
+}

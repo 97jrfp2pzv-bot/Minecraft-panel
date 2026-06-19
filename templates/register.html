@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft-panel</title>
+</head>
+<body>
+<form class= "reg" action="/reg/" method="POST">
+    <h1>Регистрация</h1>
+        {% csrf_token %}
+    <input type="text" id="username" placeholder="user123" name="username">
+    <input type="password" id="password1" placeholder="Secret-yml123" name="password1">
+    <input type="password" id="password2" placeholder="Secret-yml123" name="password2">
+    <button type="submit">
+        зарегистрироваться
+    </button>
+</body>
+</html>
