@@ -12,5 +12,14 @@
 - Python 3.14
 - Django 
 - mctools
+## Установка
+```bash
+git clone https://github.com/97jrfp2pzv-bot/Minecraft-panel
+cd Minecraft-panel
+source venv/bin/activate
+pip install django
+pip install mc-tools
+python manage.py migrate
+python manage.py runserver
 
 
