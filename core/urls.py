@@ -31,7 +31,7 @@ urlpatterns = [
     path ('gamemode/', gamemode),
     path ('restart/', Restart),
     path ('register/', register),
-    path ('reg/', reg),
+    path ('reg/', reg, name="register"),
     path ('log/', login),
     path ('console/', console),
     path ('addserver/', addServer),

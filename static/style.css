@@ -25,6 +25,7 @@ body {
     border: none;
     background-color: black;
     opacity: 70%;
+    color: white;
 }
 .log button {
     width: 190px;
