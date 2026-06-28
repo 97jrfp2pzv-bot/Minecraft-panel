@@ -72,6 +72,7 @@ def login(request):
     else:
         form = LoginForm()
     return render(request, "login.html")
+@login_required
 def addsrv(request):
     if request.method == "POST":
         form = addServerForm(request.POST)
@@ -83,6 +84,7 @@ def addsrv(request):
     else:
         form = addServerForm()
     return render(request, "addserver.html")
+@login_required
 def console(request):
     if request.method == "POST":
         rcon = RconConnect(request.user)
