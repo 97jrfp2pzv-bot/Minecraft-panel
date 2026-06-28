@@ -16,10 +16,18 @@
 ```bash
 git clone https://github.com/97jrfp2pzv-bot/Minecraft-panel
 cd Minecraft-panel
+python3 -m venv venv
 source venv/bin/activate
-pip install django
-pip install mc-tools
-python manage.py migrate
-python manage.py runserver
+pip install -r requirements.txt
+python3 manage.py migrate
+python3 manage.py runserver
+```
+## У меня нет майнкрафт сервера!
+Вот тестовый вариант:
+версия: 1.21.11
+HOST = "95.216.123.235" 
+PORT = 25590
+PASSWORD = "7IdvrbWFnl"
+
 
 
